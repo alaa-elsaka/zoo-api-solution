@@ -44,4 +44,9 @@ public class AnimalController {
                      @RequestBody String habitatName) throws Exception {
         animalService.move(name, habitatName);
     }
+
+    @GetMapping("/test")
+    public String test(){
+        return "This is a test for animals API";
+    }
 }
